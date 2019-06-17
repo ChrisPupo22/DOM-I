@@ -49,11 +49,26 @@ nav[3].textContent = siteContent["nav"]["nav-item-4"];
 nav[4].textContent = siteContent["nav"]["nav-item-5"];
 nav[5].textContent = siteContent["nav"]["nav-item-6"];
 
+
+
+const addNavL = document.createElement('a');
+addNavL.href = '#';
+addNavL.textContent = 'App. Section';
+document.querySelector('nav').appendChild(addNavL);
+
+const addNavF = document.createElement('a');
+addNavF.href = '#';
+addNavF.textContent = 'Pre. Section';
+document.querySelector('nav').appendChild(addNavF);
+
+
 const greenNav = Array.from(nav);
 greenNav.forEach((link) => {
   link.style.color = 'green';
-  greenNav.appendChild()
+  
 });
+
+
 
 
 console.log(nav);

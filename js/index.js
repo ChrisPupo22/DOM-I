@@ -41,7 +41,7 @@ const siteContent = {
 let logo = document.querySelector("#logo-img");
 logo.src = siteContent["nav"]["img-src"];
 
-let nav = document.querySelectorAll("a");
+let nav = document.querySelectorAll("nav a");
 nav[0].textContent = siteContent["nav"]["nav-item-1"];
 nav[1].textContent = siteContent["nav"]["nav-item-2"];
 nav[2].textContent = siteContent["nav"]["nav-item-3"];
@@ -54,18 +54,18 @@ nav[5].textContent = siteContent["nav"]["nav-item-6"];
 const addNavL = document.createElement('a');
 addNavL.href = '#';
 addNavL.textContent = 'App. Section';
-document.querySelector('nav').appendChild(addNavL);
+document.querySelector('nav').appendChild(addNavL).style.color = 'green';
+
 
 const addNavF = document.createElement('a');
 addNavF.href = '#';
 addNavF.textContent = 'Pre. Section';
-document.querySelector('nav').appendChild(addNavF);
+document.querySelector('nav').appendChild(addNavF).style.color = 'green';
 
 
 const greenNav = Array.from(nav);
 greenNav.forEach((link) => {
   link.style.color = 'green';
-  
 });
 
 
